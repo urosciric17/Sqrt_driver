@@ -1,6 +1,6 @@
 # `sqrt_ip_driver` - Parallel Square Root Hardware Accelerator Driver
 
-## 📝 Project Overview
+## Project Overview
 
 This project implements a **Linux Platform Device Driver** for a custom **Hardware Accelerator** on a **Xilinx Zynq** platform (typically a development board like the **Zybo**).
 
@@ -8,7 +8,7 @@ The system integrates **four parallel Square Root Hardware IP cores** deployed i
 
 ---
 
-## 💡 System Architecture
+## System Architecture
 
 ### Hardware IP Cores
 
@@ -32,7 +32,7 @@ Each `mysqrtip` core uses the following 32-bit registers (accessed by the driver
 
 ---
 
-## 🛠️ Driver Implementation Details
+## Driver Implementation Details
 
 ### Parallel Execution and Synchronization
 
@@ -51,7 +51,7 @@ The core logic resides in the `obrada` function, which orchestrates parallel exe
 
 ---
 
-## 🚀 Usage Guide
+## Usage Guide
 
 ### 1. Building and Loading the Module
 
@@ -84,7 +84,7 @@ Interact with the hardware using standard Linux I/O commands:
 
 ---
 
-## 🧪 Stress Testing Application
+## Stress Testing Application
 
 The provided C application, `stress_test.c`, is used to verify the driver's operation and expose potential concurrency issues by simultaneously writing new calculation requests and reading previous results using multiple threads.
 
